@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeaveHub – HealthSync HA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="nav">
+      <div class="brand">WeaveHub</div>
+      <div class="pill">Private Beta</div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__text">
+          <p class="eyebrow">Health data, stitched into Home Assistant</p>
+          <h1>HealthSync HA</h1>
+          <p class="lede">A secure bridge between Apple HealthKit and Home Assistant. Bring heart rate, sleep, energy, and more into your automations with zero polling and no cloud dependency.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#get-started">Get Started</a>
+            <a class="btn ghost" href="#features">View Features</a>
+          </div>
+          <div class="meta">Local-first · Webhook-based · Built by WeaveHub</div>
+        </div>
+        <div class="hero__card">
+          <div class="card__header">Home Assistant Integration</div>
+          <div class="card__body">
+            <div class="stat">
+              <span class="label">iOS App</span>
+              <span class="value">HealthSync HA</span>
+            </div>
+            <div class="stat">
+              <span class="label">Data Path</span>
+              <span class="value">Secure webhook</span>
+            </div>
+            <div class="stat">
+              <span class="label">Status</span>
+              <span class="badge">Local Push</span>
+            </div>
+            <div class="stat">
+              <span class="label">Supported</span>
+              <span class="value">Heart · HRV · Sleep · Energy · SpO₂ · More</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="panel">
+        <div class="panel__header">
+          <h2>Why WeaveHub + Home Assistant</h2>
+          <p>Purpose-built for local automations. No third-party cloud. Tuned for fast, reliable updates.</p>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <h3>Local-first</h3>
+            <p>Webhooks from your device to Home Assistant—no middleman, no polling.</p>
+          </div>
+          <div class="card">
+            <h3>Metric-rich</h3>
+            <p>Heart rate, HRV, VO₂ max, SpO₂, energy, distance, hydration, blood pressure, and more.</p>
+          </div>
+          <div class="card">
+            <h3>Secure by design</h3>
+            <p>Webhook IDs scoped per install. No credentials stored in the cloud.</p>
+          </div>
+          <div class="card">
+            <h3>Instant updates</h3>
+            <p>HealthKit observers push data as soon as it’s available—ideal for responsive automations.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="get-started" class="panel">
+        <div class="panel__header">
+          <h2>Get Started</h2>
+          <p>Install the Home Assistant custom integration, connect the iOS app, and pick your metrics.</p>
+        </div>
+        <ol class="steps">
+          <li><strong>Install the integration:</strong> Add the HealthSync HA custom component to Home Assistant.</li>
+          <li><strong>Copy your webhook:</strong> In HA, open the HealthSync HA config to get the webhook ID/URL.</li>
+          <li><strong>Configure the app:</strong> In the iOS app, paste the webhook URL, select metrics, and tap <em>Authorize &amp; Start Sync</em>.</li>
+          <li><strong>Automate:</strong> Use the new sensors in HA automations (e.g., adjust climate based on resting HR).</li>
+        </ol>
+        <div class="note">No logo yet for WeaveHub—brand assets coming soon.</div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="brand">WeaveHub</div>
+      <div class="footnote">Local integrations for modern homes.</div>
+    </footer>
+  </div>
+</body>
+</html>
