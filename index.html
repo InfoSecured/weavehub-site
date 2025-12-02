@@ -31,24 +31,41 @@
           <div class="meta">Local-first · Webhook-based · Built by WeaveHub</div>
         </div>
         <div class="hero__card">
-          <div class="card__header">Home Assistant Integration</div>
+          <div class="card__header">Integrations</div>
           <div class="card__body">
+            <div class="stat">
+              <span class="label">Home Assistant</span>
+              <span class="badge">Local Push</span>
+            </div>
+            <div class="stat">
+              <span class="label">Google Sheets</span>
+              <span class="value">Append metrics to a sheet for tracking</span>
+            </div>
             <div class="stat">
               <span class="label">iOS App</span>
               <span class="value">HealthSync HA</span>
             </div>
             <div class="stat">
-              <span class="label">Data Path</span>
-              <span class="value">Secure webhook</span>
-            </div>
-            <div class="stat">
-              <span class="label">Status</span>
-              <span class="badge">Local Push</span>
-            </div>
-            <div class="stat">
               <span class="label">Supported</span>
               <span class="value">Heart · HRV · Sleep · Energy · SpO₂ · More</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="integrations" class="panel">
+        <div class="panel__header">
+          <h2>Integrations</h2>
+          <p>Plug your health data into the tools you already use.</p>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <h3>Home Assistant</h3>
+            <p>Local webhook bridge for real-time automations. Ideal for climate, lighting, and presence automations based on your current vitals.</p>
+          </div>
+          <div class="card">
+            <h3>Google Sheets</h3>
+            <p>Append incoming metrics to a sheet for journaling, dashboards, or sharing. Great for long-term trends and lightweight reporting.</p>
           </div>
         </div>
       </section>
@@ -84,12 +101,12 @@
           <p>Install the Home Assistant custom integration, connect the iOS app, and pick your metrics.</p>
         </div>
         <ol class="steps">
-          <li><strong>Install the integration:</strong> Add the HealthSync HA custom component to Home Assistant.</li>
-          <li><strong>Copy your webhook:</strong> In HA, open the HealthSync HA config to get the webhook ID/URL.</li>
-          <li><strong>Configure the app:</strong> In the iOS app, paste the webhook URL, select metrics, and tap <em>Authorize &amp; Start Sync</em>.</li>
-          <li><strong>Automate:</strong> Use the new sensors in HA automations (e.g., adjust climate based on resting HR).</li>
+          <li><strong>Install integrations:</strong> Add the HealthSync HA custom component to Home Assistant or connect Google Sheets.</li>
+          <li><strong>Copy your webhook:</strong> In HA, open the HealthSync HA config to get the webhook ID/URL (or use your Sheets endpoint from the app).</li>
+          <li><strong>Configure the app:</strong> In the iOS app, paste the target URL, select metrics, and tap <em>Authorize &amp; Start Sync</em>.</li>
+          <li><strong>Automate or log:</strong> Use HA sensors in automations, or capture a timeline in Sheets for trending.</li>
         </ol>
-        <div class="note">No logo yet for WeaveHub—brand assets coming soon.</div>
+        <div class="note">Tip: You can run both integrations in parallel—automate in HA while logging to Sheets.</div>
       </section>
     </main>
 
