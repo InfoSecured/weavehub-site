@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – WeaveHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="nav">
+      <div class="brand">WeaveHub</div>
+      <a class="pill" href="index.html">Back to Home</a>
+    </header>
+
+    <main>
+      <section class="panel">
+        <div class="panel__header">
+          <h1>Privacy Policy</h1>
+          <p>Effective: January 2025</p>
+        </div>
+        <div class="policy">
+          <h3>Overview</h3>
+          <p>WeaveHub builds local-first integrations. HealthSync HA uses Apple HealthKit on your device and sends data directly to your Home Assistant instance via a webhook you control. We do not operate a cloud service for your health data.</p>
+
+          <h3>Data We Handle</h3>
+          <ul>
+            <li><strong>On-device:</strong> The iOS app reads selected HealthKit metrics with your consent.</li>
+            <li><strong>Sent to Home Assistant:</strong> Metrics you enable (e.g., heart rate, HRV, energy, hydration) are posted to your HA webhook endpoint.</li>
+            <li><strong>Not collected by WeaveHub:</strong> We do not receive or store your health data on WeaveHub servers.</li>
+          </ul>
+
+          <h3>Connectivity</h3>
+          <ul>
+            <li>The iOS app posts JSON payloads to your configured Home Assistant webhook URL.</li>
+            <li>No third-party analytics are embedded in the iOS app.</li>
+            <li>App Store / TestFlight may collect standard crash/usage analytics per Apple policies.</li>
+          </ul>
+
+          <h3>Permissions</h3>
+          <ul>
+            <li>HealthKit read access is requested only for metrics you select.</li>
+            <li>Background delivery is used to push new samples promptly.</li>
+          </ul>
+
+          <h3>Security</h3>
+          <ul>
+            <li>Webhook communication uses HTTPS if your Home Assistant URL is HTTPS.</li>
+            <li>Webhook IDs are generated per integration instance; protect them like a secret.</li>
+          </ul>
+
+          <h3>Retention & Control</h3>
+          <ul>
+            <li>Health data remains in HealthKit and your Home Assistant storage; manage retention there.</li>
+            <li>You can stop sync anytime by removing the integration or clearing the app’s settings.</li>
+          </ul>
+
+          <h3>Contact</h3>
+          <p>Questions? Contact the maintainer via the project repository or your usual support channel.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="brand">WeaveHub</div>
+      <div class="footnote">Local integrations for modern homes.</div>
+      <div class="footnote"><a href="privacy.html">Privacy Policy</a></div>
+      <div class="footnote">© 2025 WeaveHub. All rights reserved.</div>
+    </footer>
+  </div>
+</body>
+</html>
