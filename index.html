@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WeaveHub – HealthSync HA</title>
+  <title>WeaveHub – Apps & Integrations</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -21,9 +21,9 @@
     <main>
       <section class="hero">
         <div class="hero__text">
-          <p class="eyebrow">Health data, stitched into Home Assistant</p>
-          <h1>HealthSync HA</h1>
-          <p class="lede">A secure bridge between Apple HealthKit and Home Assistant. Bring heart rate, sleep, energy, and more into your automations with zero polling and no cloud dependency.</p>
+          <p class="eyebrow">Apps and integrations for builders</p>
+          <h1>WeaveHub</h1>
+          <p class="lede">Local-first tools for makers. Stream your health data into automations, or carry a precision bullet reference in your pocket. Two apps, one goal: fast, reliable, focused utility.</p>
           <div class="cta-row">
             <a class="btn primary" href="#get-started">Get Started</a>
             <a class="btn ghost" href="#features">View Features</a>
@@ -32,7 +32,7 @@
           <div class="meta">Local-first · Webhook-based · Built by WeaveHub</div>
         </div>
         <div class="hero__card">
-          <div class="card__header">Integrations</div>
+          <div class="card__header">Apps & Integrations</div>
           <div class="card__body">
             <div class="stat">
               <span class="label">Home Assistant</span>
@@ -43,13 +43,42 @@
               <span class="value">Append metrics to a sheet for tracking</span>
             </div>
             <div class="stat">
-              <span class="label">iOS App</span>
-              <span class="value">HealthSync HA</span>
+              <span class="label">iOS Apps</span>
+              <span class="value">HealthSync HA · BulletMatch</span>
             </div>
             <div class="stat">
               <span class="label">Supported</span>
               <span class="value">Heart · HRV · Sleep · Energy · SpO₂ · More</span>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="panel">
+        <div class="panel__header">
+          <h2>Products</h2>
+          <p>Two iOS apps, built for speed and clarity.</p>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <h3>HealthSync HA</h3>
+            <p>Apple HealthKit → Home Assistant + Google Sheets. Webhook-based, local-first, no polling.</p>
+            <ul>
+              <li>Metrics: heart rate, HRV, SpO₂, energy, distance, hydration, BP, more.</li>
+              <li>Targets: Home Assistant sensors, Sheets logging.</li>
+              <li>Built for automations and journaling in parallel.</li>
+            </ul>
+            <p><a class="inline-link" href="https://github.com/InfoSecured/healthsync-ha" target="_blank" rel="noopener">View on GitHub</a></p>
+          </div>
+          <div class="card">
+            <h3>BulletMatch (Scott's Guide)</h3>
+            <p>A precision-focused reference for reloaders. Quickly search and compare bullets by caliber, manufacturer, weight, or construction type.</p>
+            <ul>
+              <li>Catalog of published specs: weight, diameter, length, BC, design traits.</li>
+              <li>Side-by-side comparisons and saved sets with personal notes.</li>
+              <li>Search/filter by caliber, brand, construction; optional inventory tracking.</li>
+            </ul>
+            <p class="notice">Important: BulletMatch is a reference tool only—no load data, charges, seating depth, or safety guidance. Always use official manuals and verify through manufacturers.</p>
           </div>
         </div>
       </section>
@@ -97,16 +126,28 @@
         </div>
       </section>
 
+      <section id="support" class="panel">
+        <div class="panel__header">
+          <h2>Support</h2>
+          <p>Need help or want to share feedback? Reach us directly.</p>
+        </div>
+        <div class="cta-row">
+          <a class="btn primary" href="mailto:business@infosecured.org?subject=WeaveHub%20Support">Email Support</a>
+          <a class="btn ghost" href="mailto:business@infosecured.org?subject=WeaveHub%20Feedback">Send Feedback</a>
+        </div>
+        <div class="note">Include your app (HealthSync HA or BulletMatch) and any logs/screenshots that help us reproduce the issue.</div>
+      </section>
+
       <section id="get-started" class="panel">
         <div class="panel__header">
           <h2>Get Started</h2>
-          <p>Install the Home Assistant custom integration, connect the iOS app, and pick your metrics.</p>
+          <p>Pick your app, point it at your target, and start streaming or researching.</p>
         </div>
         <ol class="steps">
-          <li><strong>Install integrations:</strong> Add the HealthSync HA custom component to Home Assistant or connect Google Sheets.</li>
-          <li><strong>Copy your webhook:</strong> In HA, open the HealthSync HA config to get the webhook ID/URL (or use your Sheets endpoint from the app).</li>
-          <li><strong>Configure the app:</strong> In the iOS app, paste the target URL, select metrics, and tap <em>Authorize &amp; Start Sync</em>.</li>
+          <li><strong>HealthSync HA (automation):</strong> Add the HA custom component or connect Sheets. Copy your webhook URL.</li>
+          <li><strong>Configure the app:</strong> In iOS, paste the target URL, select metrics, and tap <em>Authorize &amp; Start Sync</em>.</li>
           <li><strong>Automate or log:</strong> Use HA sensors in automations, or capture a timeline in Sheets for trending.</li>
+          <li><strong>BulletMatch (reference):</strong> Search, filter, and compare bullets; save comparison sets and notes.</li>
         </ol>
         <div class="note">Tip: You can run both integrations in parallel—automate in HA while logging to Sheets.</div>
       </section>
@@ -118,6 +159,7 @@
       <div class="footnote">
         <a href="privacy.html">Privacy Policy</a>
       </div>
+      <div class="footnote"><a href="mailto:business@infosecured.org?subject=WeaveHub%20Support">Support</a></div>
       <div class="footnote">© 2025 WeaveHub. All rights reserved.</div>
     </footer>
   </div>

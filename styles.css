@@ -224,6 +224,18 @@ body {
   background: rgba(255, 255, 255, 0.02);
 }
 
+.card ul {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.notice {
+  color: var(--accent-2);
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
 .steps {
   padding-left: 20px;
   margin: 18px 0;
